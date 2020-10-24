@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgs"
+    tools:context=".Insumos_act">
+
+    <LinearLayout
+        android:layout_width="321dp"
+        android:layout_height="243dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.799">
+
+        <Button
+            android:id="@+id/anadir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Anadir"
+            android:text="añadir insumos" />
+
+        <Button
+            android:id="@+id/mostrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Motrar"
+            android:text="mostrar insumos" />
+
+        <Button
+            android:id="@+id/eliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Eliminar"
+            android:text="eliminar insumos" />
+
+        <Button
+            android:id="@+id/actualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Actualizar"
+            android:text="actualizar insumos" />
+
+        <Button
+            android:id="@+id/limpiar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Limpiar"
+            android:text="limpiar" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="245dp"
+        android:layout_height="185dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071"
+        app:srcCompat="@drawable/bdgrande" />
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="194dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.054">
+
+        <EditText
+            android:id="@+id/codigoInsumo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Codigo Insumo"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/NombreInsumo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nombre Insumo"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/PrecioInsumo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Precio Insumo"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/StockInsumo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Stock Insumo"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
